@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "파이썬 정수형"
+date:   2021-11-08 21:03:36 +0530
+categories: 파이썬 문법
+---
+
+
+# 강의교재 3 24p 변형
+# 몇 진수인지 판별
+
+sel = int(input("진수 타입을 결정하시오(16,10,8,2진수)"))
+
+# print(sel+16)
+# print(type(sel)) # sel 유형 판별
+
+num = input('값 입력: ')
+
+if sel == 16:
+    num10 = int(num, 16) # 값을 16진수의 정수(int, integer)로 바꾼다  
+    print(int(num10)) # 들여쓰기(indentation) : Tab이나 스페이스바 4번 눌러서 블록(영역) 지정하여 아래 문장들이 if안에 들어갔다는 것을 표현
+    print(hex(num10)) # 16진수로 표현  
+    print(bin(num10)) # 2진수로 표현  
+
+if sel == 2: 
+    num2 = int(num, 2)
+    print(num2) 
+    print(hex(num2)) 
+    print(bin(num2))
